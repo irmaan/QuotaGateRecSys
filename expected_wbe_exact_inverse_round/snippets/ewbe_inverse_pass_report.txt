@@ -1,0 +1,4 @@
+PASS_MAIN=True
+datasets_tie_or_beat_wbe_threshold=2/3
+all_comp_ok=True
+all_ndcg_ok=True

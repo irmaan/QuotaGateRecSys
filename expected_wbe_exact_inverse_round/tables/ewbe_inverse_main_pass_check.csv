@@ -1,0 +1,4 @@
+dataset,ewbe_rdu_wbe,wbe_threshold_wbe,ewbe_rdu_compliance,ewbe_rdu_ndcg,old_rdu_ndcg,tie_or_beat_wbe_threshold,compliance_ok,ndcg_not_visibly_worse_than_old,pass_rule_overall
+Amazon-VideoGames,0.02703611589272817,0.02716040110588074,0.9002,0.02803887088346388,0.02803887088346388,True,True,True,True
+ML-1M,0.0221297804751603,0.02213473894950996,0.9000828500414251,0.034534603431927935,0.03457363331633832,True,True,True,True
+ML-20M,0.008304032257397955,0.00829599763870238,0.9002,0.040199890026915645,0.04009989002691564,False,True,True,True
