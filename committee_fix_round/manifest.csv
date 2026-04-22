@@ -1,0 +1,16 @@
+path,bytes
+README.md,854
+figs/fig_main_frontier_with_seed_errorbars.png,277737
+figs/fig_risk_beyond_utility_auc_gain.png,81706
+figs/fig_risk_within_utility_bins.png,263452
+figs/fig_tau_sweep_wbe.png,460287
+figs/fig_widthscale_sweep_wbe.png,393995
+snippets/tmux_run_instructions.txt,854
+tables/committee_main_setting_summary.csv,5232
+tables/committee_pairwise_significance.csv,3416
+tables/committee_runtime_summary.csv,14353
+tables/committee_seed_level_results.csv,160303
+tables/committee_seed_summary.csv,34382
+tables/committee_tuning_log.csv,25442
+tables/risk_beyond_utility_cv.csv,790
+tables/risk_within_utility_bins.csv,3125
