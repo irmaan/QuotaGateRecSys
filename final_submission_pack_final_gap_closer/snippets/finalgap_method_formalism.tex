@@ -1,0 +1,47 @@
+% ---------- Final gap-closer formalism ----------
+\paragraph{QuotaGate framework.}
+QuotaGate governs recommendation under a population-level uncertainty target by converting the target into a finite violation budget and allocating discretionary violations online.
+
+\paragraph{Base controller.}
+QuotaGateV6 prioritizes discretionary violations by the proxy-utility gap
+\[
+\Delta_u = U_u(S_u^{\mathrm{unc}}) - U_u(S_u^{\mathrm{comp}}).
+\]
+
+\paragraph{Outcome-calibrated extension.}
+For an eligible request $u$, define exceedance and utility density as
+\[
+e_u = \max\{R(S_u^{\mathrm{unc}})-B,0\}, \qquad
+d_u = \frac{\Delta_u}{e_u+\varepsilon}.
+\]
+Using validation requests only, fit an empirical bad-cost estimator
+\[
+\widehat{C}_{\mathrm{bad}}(e_u,d_u)
+\]
+that predicts the expected weighted bad exposure incurred by violating on request $u$.
+OC-Quota then scores each opportunity by
+\[
+\mathrm{Score}_u = \Delta_u - \alpha \widehat{C}_{\mathrm{bad}}(e_u,d_u).
+\]
+
+\paragraph{Guarded-OC-Quota.}
+Guarded-OC-Quota uses the same score but chooses $\alpha$ on validation under explicit guardrails:
+(i) near-target compliance,
+(ii) negligible held-out quality loss, and
+(iii) bounded proxy-gap increase relative to QuotaGateV6.
+Thus, the pacing skeleton and compliant-slate solver remain unchanged; only the prioritization rule for discretionary violations is modified.
+
+\paragraph{Observed failure metrics.}
+Binary bad exposure is
+\[
+\mathbf{1}\{R(S_u)>B\}\mathbf{1}\{\mathrm{Hit@}K_u=0\}.
+\]
+Severity-aware weighted bad exposure is
+\[
+\mathrm{WBE}_u = \max\{R(S_u)-B,0\}(1-\mathrm{Hit@}K_u).
+\]
+Risk-weighted miss is
+\[
+\mathrm{RWM}_u = R(S_u)(1-\mathrm{Hit@}K_u).
+\]
+These metrics quantify observed recommendation failures under uncertainty-budget violations.
