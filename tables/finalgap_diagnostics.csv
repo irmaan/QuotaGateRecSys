@@ -1,0 +1,4 @@
+dataset,cand_n,B,B_table,B_record,B_source,calibration_mode,n_eligible_validation_opps,penalty_lam,pd_eta0,quota_warmup
+Amazon-VideoGames,17286,1.4568411111831665,1.4568411111831665,0.0,cand_table,binned,1000,0.720977783203125,2.0,0
+ML-1M,3533,2.347123050689697,2.347123050689697,0.0,cand_table,binned,1207,0.3293991088867187,0.5,0
+ML-20M,20720,0.9630447268486024,0.9630447268486024,0.0,cand_table,binned,1000,0.4926681518554687,0.25,0

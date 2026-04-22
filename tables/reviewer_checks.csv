@@ -1,0 +1,4 @@
+dataset,quota_tracks_tau,penalty_materially_worse,quota_near_oracle_reward,primal_dual_not_near_oracle
+Amazon-VideoGames,True,True,True,True
+ML-1M,True,False,True,True
+ML-20M,True,True,True,True

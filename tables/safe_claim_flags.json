@@ -1,0 +1,6 @@
+{
+  "quota_tracks_tau_all_datasets": true,
+  "quota_near_oracle_reward_all_datasets": true,
+  "primal_dual_fails_under_drift_all_datasets": true,
+  "penalty_fails_on_at_least_2_of_3_datasets": true
+}
